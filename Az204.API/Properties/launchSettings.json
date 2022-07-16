@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:13850",
-      "sslPort": 44319
+      "applicationUrl": "http://localhost:27135",
+      "sslPort": 44340
     }
   },
   "profiles": {
-    "Az204.Web": {
+    "Az204.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7059;http://localhost:5059",
+      "applicationUrl": "https://localhost:7121;http://localhost:5121",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

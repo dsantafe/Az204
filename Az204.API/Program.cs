@@ -1,6 +1,15 @@
+using Az204.DAL.Models;
+using Az204.Domain.Repositories;
+using Az204.Domain.Repositories.Implements;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<Az204Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Az204Context")));
+
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

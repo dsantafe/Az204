@@ -1,4 +1,4 @@
-namespace Az204.Web
+namespace Az204.API
 {
     public class WeatherForecast
     {
