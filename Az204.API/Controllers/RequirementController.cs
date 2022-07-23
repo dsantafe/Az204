@@ -1,5 +1,4 @@
 ﻿using Az204.Domain.Repositories;
-using Az204.Domain.Repositories.Implements;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Az204.API.Controllers
@@ -7,7 +6,7 @@ namespace Az204.API.Controllers
     public class RequirementController : ControllerBase
     {
         private readonly IRequirementRepository requirementRepository;
-        public RequirementController(IRequirementRepository RequirementRepository)
+        public RequirementController(IRequirementRepository requirementRepository)
         {
             this.requirementRepository = requirementRepository;
         }

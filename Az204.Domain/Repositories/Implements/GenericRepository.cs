@@ -52,6 +52,7 @@ namespace Az204.Domain.Repositories.Implements
 
         public async Task<TEntity> UpdateAsync(TEntity entity)
         {
+            context.ChangeTracker.Clear();
             context.Set<TEntity>().Update(entity);
             await context.SaveChangesAsync();
             return entity;
