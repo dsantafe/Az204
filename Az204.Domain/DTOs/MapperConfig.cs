@@ -8,6 +8,7 @@ namespace Az204.Domain.DTOs
         public MapperConfig()
         {
             CreateMap<Customer, CustomerDTO>().ReverseMap();
+            CreateMap<Project, ProjectDTO>().ReverseMap();
         }
     }
 }
